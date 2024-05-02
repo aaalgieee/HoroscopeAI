@@ -1,0 +1,404 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0221B0942BE3E80A00B9DAAB /* HoroscopeAIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0221B0932BE3E80A00B9DAAB /* HoroscopeAIApp.swift */; };
+		0221B0962BE3E80A00B9DAAB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0221B0952BE3E80A00B9DAAB /* ContentView.swift */; };
+		0221B0982BE3E80B00B9DAAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0221B0972BE3E80B00B9DAAB /* Assets.xcassets */; };
+		0221B09B2BE3E80B00B9DAAB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0221B09A2BE3E80B00B9DAAB /* Preview Assets.xcassets */; };
+		027E4A192BE3EAAA004FC4E0 /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = 027E4A182BE3EAAA004FC4E0 /* GoogleGenerativeAI */; };
+		027E4A1B2BE3EDBD004FC4E0 /* ZodiacSigns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027E4A1A2BE3EDBD004FC4E0 /* ZodiacSigns.swift */; };
+		027E4A1D2BE3EE65004FC4E0 /* HoroscopeStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027E4A1C2BE3EE65004FC4E0 /* HoroscopeStyle.swift */; };
+		027E4A1F2BE3FD04004FC4E0 /* Horoscope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027E4A1E2BE3FD04004FC4E0 /* Horoscope.swift */; };
+		027E4A222BE400B1004FC4E0 /* GenerativeAI-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 027E4A212BE400B1004FC4E0 /* GenerativeAI-Info.plist */; };
+		027E4A242BE40135004FC4E0 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027E4A232BE40135004FC4E0 /* APIKey.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0221B0902BE3E80A00B9DAAB /* HoroscopeAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HoroscopeAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0221B0932BE3E80A00B9DAAB /* HoroscopeAIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeAIApp.swift; sourceTree = "<group>"; };
+		0221B0952BE3E80A00B9DAAB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0221B0972BE3E80B00B9DAAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0221B09A2BE3E80B00B9DAAB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		027E4A1A2BE3EDBD004FC4E0 /* ZodiacSigns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZodiacSigns.swift; sourceTree = "<group>"; };
+		027E4A1C2BE3EE65004FC4E0 /* HoroscopeStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeStyle.swift; sourceTree = "<group>"; };
+		027E4A1E2BE3FD04004FC4E0 /* Horoscope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Horoscope.swift; sourceTree = "<group>"; };
+		027E4A212BE400B1004FC4E0 /* GenerativeAI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GenerativeAI-Info.plist"; sourceTree = "<group>"; };
+		027E4A232BE40135004FC4E0 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0221B08D2BE3E80A00B9DAAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				027E4A192BE3EAAA004FC4E0 /* GoogleGenerativeAI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0221B0872BE3E80A00B9DAAB = {
+			isa = PBXGroup;
+			children = (
+				0221B0922BE3E80A00B9DAAB /* HoroscopeAI */,
+				0221B0912BE3E80A00B9DAAB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0221B0912BE3E80A00B9DAAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0221B0902BE3E80A00B9DAAB /* HoroscopeAI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0221B0922BE3E80A00B9DAAB /* HoroscopeAI */ = {
+			isa = PBXGroup;
+			children = (
+				027E4A202BE4008C004FC4E0 /* Config */,
+				0221B0932BE3E80A00B9DAAB /* HoroscopeAIApp.swift */,
+				027E4A1A2BE3EDBD004FC4E0 /* ZodiacSigns.swift */,
+				027E4A1C2BE3EE65004FC4E0 /* HoroscopeStyle.swift */,
+				0221B0952BE3E80A00B9DAAB /* ContentView.swift */,
+				027E4A1E2BE3FD04004FC4E0 /* Horoscope.swift */,
+				0221B0972BE3E80B00B9DAAB /* Assets.xcassets */,
+				0221B0992BE3E80B00B9DAAB /* Preview Content */,
+			);
+			path = HoroscopeAI;
+			sourceTree = "<group>";
+		};
+		0221B0992BE3E80B00B9DAAB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0221B09A2BE3E80B00B9DAAB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		027E4A202BE4008C004FC4E0 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				027E4A212BE400B1004FC4E0 /* GenerativeAI-Info.plist */,
+				027E4A232BE40135004FC4E0 /* APIKey.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0221B08F2BE3E80A00B9DAAB /* HoroscopeAI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0221B09E2BE3E80B00B9DAAB /* Build configuration list for PBXNativeTarget "HoroscopeAI" */;
+			buildPhases = (
+				0221B08C2BE3E80A00B9DAAB /* Sources */,
+				0221B08D2BE3E80A00B9DAAB /* Frameworks */,
+				0221B08E2BE3E80A00B9DAAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HoroscopeAI;
+			packageProductDependencies = (
+				027E4A182BE3EAAA004FC4E0 /* GoogleGenerativeAI */,
+			);
+			productName = HoroscopeAI;
+			productReference = 0221B0902BE3E80A00B9DAAB /* HoroscopeAI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0221B0882BE3E80A00B9DAAB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					0221B08F2BE3E80A00B9DAAB = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 0221B08B2BE3E80A00B9DAAB /* Build configuration list for PBXProject "HoroscopeAI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0221B0872BE3E80A00B9DAAB;
+			packageReferences = (
+				027E4A172BE3EAAA004FC4E0 /* XCRemoteSwiftPackageReference "generative-ai-swift" */,
+			);
+			productRefGroup = 0221B0912BE3E80A00B9DAAB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0221B08F2BE3E80A00B9DAAB /* HoroscopeAI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0221B08E2BE3E80A00B9DAAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0221B09B2BE3E80B00B9DAAB /* Preview Assets.xcassets in Resources */,
+				027E4A222BE400B1004FC4E0 /* GenerativeAI-Info.plist in Resources */,
+				0221B0982BE3E80B00B9DAAB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0221B08C2BE3E80A00B9DAAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				027E4A242BE40135004FC4E0 /* APIKey.swift in Sources */,
+				0221B0962BE3E80A00B9DAAB /* ContentView.swift in Sources */,
+				027E4A1B2BE3EDBD004FC4E0 /* ZodiacSigns.swift in Sources */,
+				027E4A1D2BE3EE65004FC4E0 /* HoroscopeStyle.swift in Sources */,
+				027E4A1F2BE3FD04004FC4E0 /* Horoscope.swift in Sources */,
+				0221B0942BE3E80A00B9DAAB /* HoroscopeAIApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0221B09C2BE3E80B00B9DAAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0221B09D2BE3E80B00B9DAAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0221B09F2BE3E80B00B9DAAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HoroscopeAI/Preview Content\"";
+				DEVELOPMENT_TEAM = A2JKADPAG3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = aaalgieee.HoroscopeAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0221B0A02BE3E80B00B9DAAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HoroscopeAI/Preview Content\"";
+				DEVELOPMENT_TEAM = A2JKADPAG3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = aaalgieee.HoroscopeAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0221B08B2BE3E80A00B9DAAB /* Build configuration list for PBXProject "HoroscopeAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0221B09C2BE3E80B00B9DAAB /* Debug */,
+				0221B09D2BE3E80B00B9DAAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0221B09E2BE3E80B00B9DAAB /* Build configuration list for PBXNativeTarget "HoroscopeAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0221B09F2BE3E80B00B9DAAB /* Debug */,
+				0221B0A02BE3E80B00B9DAAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		027E4A172BE3EAAA004FC4E0 /* XCRemoteSwiftPackageReference "generative-ai-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google-gemini/generative-ai-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		027E4A182BE3EAAA004FC4E0 /* GoogleGenerativeAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 027E4A172BE3EAAA004FC4E0 /* XCRemoteSwiftPackageReference "generative-ai-swift" */;
+			productName = GoogleGenerativeAI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 0221B0882BE3E80A00B9DAAB /* Project object */;
+}
